@@ -69,11 +69,3 @@ pnpm dlx vercel --prod
 ```
 
 No guardes tokens ni secretos en el repositorio. Si en el futuro agregas un formulario o servicios externos, configura sus variables en **Settings → Environment Variables**.
-
-## Criterios del diseño
-
-- Sin placeholders externos, emojis decorativos ni ilustraciones genéricas.
-- Navegación por teclado, enlace para saltar contenido y soporte para `prefers-reduced-motion`.
-- Tema claro/oscuro e idioma persistidos en `localStorage`.
-- Casos de estudio en panel lateral para conservar contexto sin perder la posición de lectura.
-- Responsive para móvil, tableta y escritorio.
