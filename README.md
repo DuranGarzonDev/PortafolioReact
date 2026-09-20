@@ -18,8 +18,13 @@ Vite mostrará una dirección local, normalmente `http://localhost:5173`.
 - `src/constants/data.js`: textos, datos personales, enlaces, proyectos, trayectoria y stack. Es el archivo principal para actualizar contenido.
 - `src/index.css`: colores, tipografía, espacios, responsive y apariencia visual.
 - `src/components/`: estructura e interacción de cada sección.
-- `public/images/Hero.png`: fotografía principal. Conserva el nombre o cambia `profile.portrait` en `data.js`.
+- `public/images/web-pc-main.jpg`: portada usada en pantallas de escritorio.
+- `public/images/web-mobile-main.jpg`: portada específica para teléfonos.
+- `public/images/frame-personal.png`: ilustración de la escena de presentación.
+- `public/images/frame-de-pie.png`: ilustración de la sección de proceso.
 - `index.html`: título, descripción y metadatos para buscadores y redes sociales.
+
+Las portadas se seleccionan mediante el elemento `picture` de `src/components/Hero.jsx`. Puedes reemplazar una imagen conservando su nombre, o cambiar allí la ruta si quieres mantener varias versiones. Los textos alternativos están en `src/constants/data.js` para conservar la traducción español/inglés.
 
 Cada proyecto tiene una parte compartida (`projects`) y textos por idioma (`content.es.projects.items`). El valor `id` debe coincidir en ambos lugares.
 
@@ -47,7 +52,7 @@ pnpm preview   # previsualizar el build
 
 ```bash
 git add .
-git commit -m "Rediseñar portafolio y ampliar casos de estudio"
+git commit -m "Actualizar contenido del portafolio"
 git push origin main
 ```
 
