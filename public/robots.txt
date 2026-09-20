@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portafolio-react-juan-david-duran-garzons-projects.vercel.app/sitemap.xml

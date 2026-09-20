@@ -15,7 +15,7 @@ export default function App() {
   const copy = content[language];
 
   useEffect(() => { document.documentElement.dataset.theme = theme; localStorage.setItem('portfolio-theme', theme); }, [theme]);
-  useEffect(() => { document.documentElement.lang = language; localStorage.setItem('portfolio-language', language); }, [language]);
+  useEffect(() => { document.documentElement.lang = language === 'es' ? 'es-CO' : 'en'; localStorage.setItem('portfolio-language', language); }, [language]);
 
   return <div className="site-shell">
     <a className="skip-link" href="#main">{copy.skip}</a>
